@@ -4,10 +4,10 @@ import numpy as np
 import streamlit as st
 from PIL import Image, ImageFilter
 
-st.set_page_config(page_title="1:1 Image Square Tool", layout="wide")
-st.title("Square Image Tool (1:1 ratio, output <= 900px)")
+st.set_page_config(page_title="Image Pixel", layout="wide")
+st.title("Image Pixel and Dimension Aligner")
 
-st.caption("Manual upload. Output is always square (1:1) and never larger than 900x900. No upscaling.")
+st.caption("Manual upload. Output is always square (1:1) and never larger than 900x900. No upscaling. Contact Pratik Adsare for any doubts")
 
 def corner_color(img: Image.Image, patch: int = 25):
     arr = np.array(img.convert("RGB"))
